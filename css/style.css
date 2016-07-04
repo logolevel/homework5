@@ -3,4 +3,105 @@
 /*styles*/
 body {
 	font-family: "HelveticaNeueLt", Arial, sans-serif;
+	font-size: 14px;
+}
+/*header*/
+.clearfix:before {
+	content: '';
+	clear: both;
+	display: block;
+}
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.header {
+	height: 36px;
+	background: url(../img/header-pattern.jpg) repeat-x 0 0;
+}
+.header-line {
+	float: right;
+}
+.header-line li {
+	display: inline-block;
+}
+.header-line li a {
+	color: #60b5ed;
+	text-decoration: none;
+	display: block;
+	padding: 0 12px;
+	line-height: 36px;
+}
+.header-line li a:hover {
+	background-color: #4eabda;
+	color: #fff;
+	transition: all 0.2s ease-in-out;
+}
+.more-link span {
+	text-decoration: underline;
+}
+.header-line a.more-link {
+	color: #fff;
+	border: 1px solid transparent;
+}
+.header-line a.more-link:hover {
+	border: 1px solid #489bd5;
+	background: rgb(80,175,220);
+  background: -moz-linear-gradient(top, rgb(80,175,220) 0%, rgb(46,122,196) 100%);
+  background: -webkit-linear-gradient(top, rgb(80,175,220) 0%,rgb(46,122,196) 100%);
+  background: linear-gradient(to bottom, rgb(80,175,220) 0%,rgb(46,122,196) 100%);
+}
+.header-line a.flag-link {
+	padding-left: 33px;
+}
+.header-line li:nth-child(5),
+.header-line li:nth-child(6) {
+	position: relative;
+}
+.header-line a.flag-link:before {
+	content: '';
+	display: block;
+	background: url(../img/flag.png) no-repeat 0 5px;
+	width: 25px;
+	height: 27px;
+	position: absolute;
+	top: 3px;
+	left: 0;
+}
+.last-list-item {
+	margin-right: 10px;
+}
+.header-line a.last-list-item:after {
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 30px;
+	background-color: #60b5ed;
+	position: absolute;
+	top: 2px;
+	right: 3px;
+	margin-right: 7px;
+}
+/*main*/
+/*bg on full screen*/
+img.img-bg {
+  min-height: 100%;
+  min-width: 1215px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 36px;
+  left: 0;
+}
+@media screen and (max-width: 1215px) {
+  img.img-bg {
+    left: 50%;
+    margin-left: -607px;
+  }
+}
+/*form*/
+.form-wrap {
+	width: 560px;
+	height: 615px;
+	background-color: #ccc;
 }
