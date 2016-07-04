@@ -1,1 +1,6 @@
 @import "reset.css";
+@import "fonts.css";
+/*styles*/
+body {
+	font-family: "HelveticaNeueLt", Arial, sans-serif;
+}
