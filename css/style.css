@@ -144,12 +144,12 @@ img.img-bg {
 	background: url(../img/fb.png) no-repeat;
 	cursor: pointer;
 	border: 0;
-	margin-top: 38px;
+	margin-top: 35px;
 }
 .decoration-line {
 	color: #7d7f7c;
 	position: relative;
-	margin: 32px 0 24px;
+	margin: 30px 0 25px;
 }
 .decoration-line p:after,
 .decoration-line p:before {
@@ -172,15 +172,21 @@ form {
 	width: 280px;
 	margin: 0 auto;
 }
-.form-wrap input {
+.form-wrap input[type="text"],
+.form-wrap input[type="email"],
+.form-wrap input[type="password"] {
 	display: block;
 	background-color: #000;
 	color: #fffbfb;
 	padding: 10px 18px;
 	border: 0;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	width: 100%;
 	border-bottom: 1px solid #484948;
+}
+.form-wrap input[type="submit"] {
+	display: block;
+	margin: 15px auto 25px;
 }
 .form-wrap input[type="text"]:focus,
 .form-wrap input[type="email"]:focus,
